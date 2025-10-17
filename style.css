@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #1f252d;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: #181c23;
+  padding: 20px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: box-shadow 0.3s ease;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 0;
+}
+
+.hero h1 {
+  font-size: 2.4em;
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #aaa;
+}
+
+/* Offer Section */
+.offer {
+  padding: 60px 0;
+  background: #2a2f39;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.countdown div {
+  background: #181c23;
+  padding: 20px;
+  border-radius: 8px;
+  width: 70px;
+}
+
+.countdown span {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.offer-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.offer-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.offer-form button {
+  padding: 10px 20px;
+  background: #ff4c60;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Sections */
+section h2 {
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+section p {
+  color: #aaa;
+}
+
+/* Image Placeholder */
+.image-placeholder {
+  width: 100%;
+  height: 200px;
+  background: #3a3f49;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* How It Works */
+.carousel .slide {
+  background: #3a3f49;
+  padding: 80px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Advantages */
+.advantages ul {
+  list-style: none;
+  margin-top: 20px;
+  color: #ccc;
+  text-align: left;
+  display: inline-block;
+}
+
+/* Pricing */
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background: #2a2f39;
+  padding: 30px;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.card.featured {
+  background: #ff4c60;
+  color: #fff;
+}
+
+.card .price {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background: #181c23;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* --------------------------- */
+/* RESPONSIVE DESIGN */
+/* --------------------------- */
+
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .countdown div {
+    width: 60px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .offer-form input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6em;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .countdown {
+    gap: 10px;
+  }
+
+  .countdown div {
+    width: 50px;
+    padding: 10px;
+  }
+
+  .offer-form {
+    flex-direction: column;
+  }
+
+  .offer-form button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  section h2 {
+    font-size: 1.4em;
+  }
+}
